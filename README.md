@@ -282,7 +282,9 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    ![image](./assets/fiori-1.png)
 
-   ii. Search for “zsh” and then chose the object accordingly as per your user, example for  select Zsh_TRAVEL### and press OK.
+   ii. Search for “zsh” and then chose the object accordingly as per your user, example for  select ZSH_TRAVEL### and press OK.
+   
+   **NOTE: only select the table of your user ID which is created by yourself .**
 
     ![alt text](image-13.png)
 
@@ -296,7 +298,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    vi. Review the list of repository objects that are going to be generated and press Next again.
 
-   vii. Select a transport request from the list or browse for existing requests from under the “Enter a request number” and select the “CEI Workshop" request. You can also create a new request.
+   vii. Select a transport request from the list or browse for existing requests with description **SH build Package ###** which has been created yourown user account in **Excercise 0**. 
 
    viii. Click Finish and wait for artifacts to generate.
 
