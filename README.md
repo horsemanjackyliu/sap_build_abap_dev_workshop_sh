@@ -64,20 +64,49 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 1. Download your BTP subaccount's trust certificate.
 2. Configure the communication system in the ABAP environment using the Communication Systems app. -->
 
-**SAP Build system with access to Build Code, Build Apps and Build Process Automation is already available:** [Link](https://spa-us10-nwjsondh.us10.build.cloud.sap)
+**SAP Build system with access to Build Code, Build Apps and Build Process Automation is already available:** [Link](https://build-day-gc-wk1s5i5m.us10.build.cloud.sap/lobby)
 
 ## Hands-On Exercises
 
 **Note:** The system is for testing purposes only. After the session, all data will be lost, so keep that in mind when creating new TRs or objects.
 
 
-### Exercise 0: Create Package Tabel and data generater class in Eclipse ADT
 
-1. **Create Package**
+
+### Exercise 0: Create ABAP Project,Package, Table and data generater class in Eclipse ADT
+
+1. **Create ABAP Cloud Project in Eclipse ADT**
+   
+
+   ![alt text](image-17.png)
+   ![alt text](image-18.png)
+
+   Fill the field **ABAP instance URL** with the value : https://051ed91d-aa61-4ac5-a825-fbbbc8f45121.abap.us10.hana.ondemand.com. And click on **Next** .
+
+   ![alt text](image-19.png)
+   ![alt text](image-20.png)
+   ![alt text](image-23.png)
+
+   Input you username with **builduserxxx@sap.com** and password **W3lcome!xxx** .  xxx is your account ID. For example, if your user account number is 181, then your username is **builduser181@sap.com** and your password is **W3lcome!181** .
+
+   ![alt text](image-24.png)
+
+   ![alt text](image-21.png)
+
+
+   ![alt text](image-22.png)
+
+   
+
+
+
+2. **Create Package**
+   
+
    In ADT, go to the Project Explorer, right-click on the package ZLOCAL, and select New > ABAP Package from the context menu.
    ![alt text](image.png)
    
-   Maintain the required information (### is your group ID):
+   Maintain the required information (### is your account ID):
 
    ![alt text](image-1.png)
 
@@ -91,17 +120,18 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 
 
-2. **Create database table**
+3. **Create database table**
+   
    - Right-click on your ABAP package zshbuild_### and select New > Other ABAP Repository Object from the context menu.
     ![alt text](image-3.png)
 
    - Search for database table, select it, and click Next >.
   ![alt text](image-4.png)
 
-   - Maintain the required information (### is your group ID) and click Next >.
+   - Maintain the required information (### is your account ID) and click Next >.
 ![alt text](image-5.png)
    - Select a transport request, and click **Finish** to create the database table.
-   - Replace the default code with the code snippet provided below and replace all occurrences of the placeholder ### with your group ID using the Replace All function (CTRL+F).
+   - Replace the default code with the code snippet provided below and replace all occurrences of the placeholder ### with your account ID using the Replace All function (CTRL+F).
 
 
       ```
@@ -127,12 +157,15 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
       ```
    - Save and activate the changes.
-3. **Create data generator class**
+  
+
+4. **Create data generator class**
+
    Create an ABAP classclass to generate demo zsh_travel### data.
       - Right-click your ABAP package zshbuild_### and select New > ABAP Class from the context menu.
          ![alt text](image-6.png)
 
-      - Maintain the required information (### is your group ID) and click Next >.
+      - Maintain the required information (### is your account ID) and click Next >.
 
          Name: ZCL_SHBUILD_GEN_DATA_###
          Description: Generate demo data
@@ -141,7 +174,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
       - Select a transport request and click Finish to create the class.
          ![alt text](image-8.png)
-      - Replace the default code with the code snippet provided in the source code document ZCL_shbuild_GEN_DATA_### linked below and replace all occurrences of the placeholder ### with your group ID using the Replace All function (CTRL+F).  
+      - Replace the default code with the code snippet provided in the source code document ZCL_shbuild_GEN_DATA_### linked below and replace all occurrences of the placeholder ### with your account ID using the Replace All function (CTRL+F).  
          ```
 
             CLASS zcl_shbuild_gen_data_### DEFINITION
@@ -194,7 +227,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 1. **Access the SAP Build Lobby:**
 
-   Log in to the [SAP Build Lobby](https://bdb6dc3dtrial.us10.build.cloud.sap/lobby) and click `Create` > `Build an Application` > `ABAP Cloud`.
+   Log in to the [SAP Build Lobby](https://build-day-gc-wk1s5i5m.us10.build.cloud.sap/) and click `Create` > `Build an Application` > `ABAP Cloud`.
 
    ![image](./assets/project-1.png)
 
@@ -204,11 +237,11 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 2. **Select System:**
 
-   From the System dropdown, select **TRL**, which is the mapped system for the session. This system has been pre-configured for the session.
+   From the System dropdown, select **H01**, which is the mapped system for the session. This system has been pre-configured for the session.
 
 3. **Package Selection:**
 
-   You can use the existing packages **ZSHBUILD_###** … 
+   You can use the existing packages **ZSHBUILD_###** Which is created by yourself in **Exercise 0** .
 
    ![alt text](image-11.png)
 
@@ -277,7 +310,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 2. **Create a Fiori Project:** Link Business Application Studio to your project
 
-   i. Create a Fiori dev space for yourself [here](https://bdb6dc3dtrial.us10cf.trial.applicationstudio.cloud.sap/index.html?externalRedirect=true).
+   i. Create a Fiori dev space for yourself [here](https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=truee).
 
    ![image](./assets/fiori-4.png)
 
@@ -291,15 +324,16 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    iv. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
 
-   - URL: <https://bdb6dc3dtrial.us10cf.trial.applicationstudio.cloud.sap/index.html>
+   - URL: <https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html>
    - Dev Space Id: `<dev space id from previous step>`
-   - Destination Name:'TRl`
+   - Destination Name:'H01`
+      ![alt text](image-25.png)
 
    v. Click on Apply and Close.
 
    vi. Select the newly published entity and select Create Fiori Project.
 
-   ![image](./assets/fiori-7b.png)
+   ![alt text](image-26.png)
 
    vii. Select the “List Report Page” as the template.
 

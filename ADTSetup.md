@@ -1,9 +1,9 @@
 # ADT Eclipse Setup
-Download Eclipse for Java via https://www.eclipse.org/downloads/packages/release/2024-09/m3
+Download Eclipse for Java via https://www.eclipse.org/downloads/packages/release/2024-12/r
 
 ## Install ABAP Plugins 
-- Navigate to Install New -> Work with Fill -> https://adt.only.sap/updatesite/dev/unbundled/
-- Next-> Select All in Trusted-> Finish -> Reboot Eclipse
+- Navigate to Install New -> Work with Fill -> https://tools.hana.ondemand.com/latest
+- Next->Select ABAP Developement Tools-> Select All in Trusted-> Finish -> Reboot Eclipse
 - **Window User**s: Open Eclipse-> Settings-> Search link Handlers-> choose "eclipse+command"
 
 ### Additional steps for Mac users to open ADT via Link Handlers( eclipse+command:// and adt://):
@@ -43,3 +43,4 @@ Download Eclipse for Java via https://www.eclipse.org/downloads/packages/release
 - File-> New Abap Cloud Project-> Fill in the service instance url (Host url configured in the Destination for the respective system)
 - Click on Open Logon Browser-> Validate access to system url in browser-> return to ADT
 - Requested system should be open to access now.
+
