@@ -87,7 +87,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    ![alt text](image-20.png)
    ![alt text](image-23.png)
 
-   Input you username with **builduserxxx@sap.com** and password **W3lcome!xxx** .  xxx is your account ID. For example, if your user account number is 181, then your username is **builduser181@sap.com** and your password is **W3lcome!181** .
+   Input you username with **builduser###@sap.com** and password **W3lcome!###** .  ### is your account ID. For example, if your user account number is 181, then your username is **builduser181@sap.com** and your password is **W3lcome!181** .
 
    ![alt text](image-24.png)
 
