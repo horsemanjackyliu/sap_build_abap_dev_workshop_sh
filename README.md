@@ -232,7 +232,12 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 1. **Access the SAP Build Lobby:**
 
-   Log in to the [SAP Build Lobby](https://build-day-gc-wk1s5i5m.us10.build.cloud.sap/) and click `Create` > `Build an Application` > `ABAP Cloud`.
+   Log in to the [SAP Build Lobby](https://build-day-gc-wk1s5i5m.us10.build.cloud.sap/).
+
+   In the next screen, click **aobocnbd7.accounts.ondemand.com**, then fill you username **builduser###@sap.com** and password **W3lcome!###**. Please replace **###** with **your user ID** . 
+
+   Then click `Create` > `Build an Application` > `ABAP Cloud`.
+
 
    ![image](./assets/project-1.png)
 
@@ -247,6 +252,8 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 3. **Package Selection:**
 
    You can use the existing packages **ZSHBUILD_###** Which is created by yourself in **Exercise 0** .
+   
+   Please replace **###** with **your user ID** . 
 
    ![alt text](image-11.png)
 
@@ -288,80 +295,86 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 1. **Create a New ABAP Object:** Use the Repository Object Generator Wizard to create a new OData UI service for your ABAP object.
 
-   i. Browse existing objects.
+   1. Browse existing objects.
 
    ![image](./assets/fiori-1.png)
 
-   ii. Search for “zsh” and then chose the object accordingly as per your user, example for  select ZSH_TRAVEL### and press OK.
+   2. Search for “zsh” and then chose the object accordingly as per your user, example for  select ZSH_TRAVEL### and press OK.
    
    **NOTE: only select the table of your user ID which is created by yourself .**
 
     ![alt text](image-13.png)
 
-   iii. Press Next.
+   3. Press Next.
 
    ![alt text](image-14.png)
 
-   iv. Once the packages are validated press Next on the screen.
+   4. Once the packages are validated press Next on the screen.
 
-   v. Validate the general details and press Next again.
+   5. Validate the general details and press Next again.
 
-   vi. Review the list of repository objects that are going to be generated and press Next again.
+   6. Review the list of repository objects that are going to be generated and press Next again.
 
-   vii. Select a transport request from the list or browse for existing requests with description **SH build Package ###** which has been created yourown user account in **Excercise 0**. 
+   7. Select a transport request from the list or browse for existing requests with description **SH build Package ###** which has been created yourown user account in **Excercise 0**. 
 
-   viii. Click Finish and wait for artifacts to generate.
+   Please replace **###** with **your user ID** . 
 
-   ix. Publish the artifacts.
+   8. Click Finish and wait for artifacts to generate.
+
+   9. Publish the artifacts.
 
    ![alt text](image-15.png)
 
-   x. Preview the Fiori Application.
+   10. Preview the Fiori Application.
 
    ![alt text](image-16.png)
 
 2. **Create a Fiori Project:** Link Business Application Studio to your project
 
-   1. Create a Fiori dev space for yourself [here](https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=truee).
+  <!-- 1. Create a Fiori dev space for yourself [here](https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=truee).
 
    ![image](./assets/fiori-4.png)
 
    2. You would need the dev space id of the newly created dev space to complete the next steps.
 
-   ![image](./assets/fiori-5.png)
+   ![image](./assets/fiori-5.png) -->
 
-   3. Go back to eclipse and open project properties.
+   1. Go back to eclipse and open project properties.
 
    ![image](./assets/fiori-6.png)
 
-   4. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
+   2. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
 
    - URL: <https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html>
-   - Dev Space Id: `<dev space id from previous step>`
+   - Dev Space Id: `ws-j9gzh`  or `ws-44984`
+      Fr builduser180@sap.com to builduser190@sap.com, use **ws-j9gzh**
+      Fr builduser191@sap.com to builduser200@sap.com, use **ws-44984**
+
+
    - Destination Name:'H01`
       ![alt text](image-25.png)
 
-   5. Click on Apply and Close.
+   1. Click on Apply and Close.
 
-   6. Select the newly published entity and select Create Fiori Project.
+   2. Select the newly published entity and select Create Fiori Project.
 
    ![alt text](image-26.png)
 
-   7. Select the “List Report Page” as the template.
+   3. Select the “List Report Page” as the template.
 
    ![image](./assets/fiori-8.png)
 
-   8. Review the Entity Selection step and press Next.
+   4. Review the Entity Selection step and press Next.
 
       ![alt text](image-27.png)
 
-   9. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
+   5. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
 
       Module name: zshbuild_ui5_###
 
       Application title:  UI5 PROJECT ###
 
-      **Note** please replace ### with your account ID.
+      **Note** Please replace **###** with **your user ID** . 
       ![alt text](image-28.png)
 
 
