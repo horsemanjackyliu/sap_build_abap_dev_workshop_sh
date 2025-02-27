@@ -87,7 +87,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    ![alt text](image-20.png)
    ![alt text](image-23.png)
 
-   Input you username with **builduser###@sap.com** and password **W3lcome!###** .  ### is your account ID. For example, if your user account number is 181, then your username is **builduser181@sap.com** and your password is **W3lcome!181** .
+   Input you username with **builduser###@sap.com** and password **W3lcome!###** .  ### is your account ID. For example, if your user account number is 181, then your username is **builduser181@sap.com** and your password is **W3lcome!181** . If you not sure, please check [UserAccounts](users.md) .
 
    ![alt text](image-24.png)
 
@@ -129,6 +129,11 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
   ![alt text](image-4.png)
 
    - Maintain the required information (### is your account ID) and click Next >.
+  
+      Name: ZSH_TRAVEL###
+
+      Description : DataBase Tabel ###
+
 ![alt text](image-5.png)
    - Select a transport request, and click **Finish** to create the database table.
    - Replace the default code with the code snippet provided below and replace all occurrences of the placeholder ### with your account ID using the Replace All function (CTRL+F).
@@ -159,7 +164,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    - Save and activate the changes.
   
 
-4. **Create data generator class**
+1. **Create data generator class**
 
    Create an ABAP classclass to generate demo zsh_travel### data.
       - Right-click your ABAP package zshbuild_### and select New > ABAP Class from the context menu.
@@ -248,6 +253,11 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 
 4. **Proceed to ABAP Project Creation:**
+   
+   Project Name: ZSHBUILD_###
+
+   Description: ZSHBUILD_###
+
    ![alt text](image-12.png)
 
 5. **Post successful creation open the project in Eclipse.**
@@ -312,48 +322,63 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 2. **Create a Fiori Project:** Link Business Application Studio to your project
 
-   i. Create a Fiori dev space for yourself [here](https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=truee).
+   1. Create a Fiori dev space for yourself [here](https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=truee).
 
    ![image](./assets/fiori-4.png)
 
-   ii. You would need the dev space id of the newly created dev space to complete the next steps.
+   2. You would need the dev space id of the newly created dev space to complete the next steps.
 
    ![image](./assets/fiori-5.png)
 
-   iii. Go back to eclipse and open project properties.
+   3. Go back to eclipse and open project properties.
 
    ![image](./assets/fiori-6.png)
 
-   iv. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
+   4. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
 
    - URL: <https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html>
    - Dev Space Id: `<dev space id from previous step>`
    - Destination Name:'H01`
       ![alt text](image-25.png)
 
-   v. Click on Apply and Close.
+   5. Click on Apply and Close.
 
-   vi. Select the newly published entity and select Create Fiori Project.
+   6. Select the newly published entity and select Create Fiori Project.
 
    ![alt text](image-26.png)
 
-   vii. Select the “List Report Page” as the template.
+   7. Select the “List Report Page” as the template.
 
    ![image](./assets/fiori-8.png)
 
-   viii. Review the Entity Selection step and press Next.
+   8. Review the Entity Selection step and press Next.
 
-   ix. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
+      ![alt text](image-27.png)
 
-   x. Click on Preview application and select start-mock. This will setup the dependencies and start a mock application.
+   9. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
 
-   ![image](./assets/fiori-9.png)
+      Module name: zshbuild_ui5_###
 
-   ![image](./assets/fiori-10.png)
+      Application title:  UI5 PROJECT ###
 
-   xi. In the preview app press Go to view mock data.
+      **Note** please replace ### with your account ID.
+      ![alt text](image-28.png)
 
-   ![image](./assets/fiori-11.png)
+
+
+
+   10. Click on Preview application and select start-mock. This will setup the dependencies and start a mock application.
+
+      ![alt text](image-29.png)
+
+      ![alt text](image-30.png)
+
+   11.  In the preview app press Go to view mock data.
+      ![alt text](image-31.png)
+ 
+
+   12. Stop the preview in SAP Business Application Studio.
+   ![alt text](image-32.png)  
 
 ## Key Takeaways
 
