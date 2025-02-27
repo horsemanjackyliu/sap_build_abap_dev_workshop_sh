@@ -346,9 +346,11 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    2. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
 
    - URL: <https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html>
-   - Dev Space Id: `ws-j9gzh`  or `ws-44984`
-      Fr builduser180@sap.com to builduser190@sap.com, use **ws-j9gzh**
-      Fr builduser191@sap.com to builduser200@sap.com, use **ws-44984**
+   - Dev Space Id: `ws-jb8lx`  or `ws-l62dz`
+
+      Fr builduser180@sap.com to builduser190@sap.com, use `ws-jb8lx`
+
+      Fr builduser191@sap.com to builduser200@sap.com, use `ws-l62dz`
 
 
    - Destination Name:'H01`
