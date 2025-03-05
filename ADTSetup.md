@@ -5,10 +5,11 @@ Download Eclipse for Java via https://www.eclipse.org/downloads/packages/release
 - Navigate to Install New -> Work with Fill -> https://tools.hana.ondemand.com/latest
 - Next->Select ABAP Developement Tools-> Select All in Trusted-> Finish -> Reboot Eclipse
   
-<!--
-- **Window User**s: Open Eclipse-> Settings-> Search link Handlers-> choose "eclipse+command"
+
+- **Window User**s: Open Eclipse-> Navigate-> Open ADT Link->Click `Link Handlers`-> choose "eclipse+command" and "ADT" > Click on `Apply and Close`
 
 ### Additional steps for Mac users to open ADT via Link Handlers( eclipse+command:// and adt://):
+
 - Move Eclipse after installation to Applications folder.
 - Right Click on Eclipse.app and select "**Show package contents**"
 - Navigate Contents-> Info.plist
@@ -39,10 +40,11 @@ Download Eclipse for Java via https://www.eclipse.org/downloads/packages/release
     **"codesign --force --deep --sign - Eclipse.app"**
 - Open Eclipse-> Settings-> Search link Handlers-> choose "eclipse+command" and "adt"
    ![image](https://github.com/user-attachments/assets/9329fc69-06b3-4d35-ba51-7a1cff5b4923)
--->
+
+`Note if you failed this step ,don't try it again for Mac. I found it optional`
 
 ## Set up Steampunk/Embedded Steampunk System:
-- File-> New Abap Cloud Project-> Fill in the service instance url (Host url configured in the Destination for the respective system)
+- File-> New Abap Cloud Project-> Fill in the service instance url ([H01](https://051ed91d-aa61-4ac5-a825-fbbbc8f45121.abap.us10.hana.ondemand.com))
 - Click on Open Logon Browser-> Validate access to system url in browser-> return to ADT
 - Requested system should be open to access now.
 
