@@ -75,6 +75,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 ### Exercise 0: Create ABAP Project,Package, Table and data generater class in Eclipse ADT
 
+
 1. **Create ABAP Cloud Project in Eclipse ADT**
    
 
@@ -87,7 +88,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    ![alt text](image-20.png)
    ![alt text](image-23.png)
 
-   Input you username with **builduser###@sap.com** and password **W3lcome!###** .  ### is your account ID. For example, if your user account number is 181, then your username is **builduser181@sap.com** and your password is **W3lcome!181** . If you not sure, please check [UserAccounts](users.md) .
+   Input you username with **builduser###@sap.com**.  ### is your account ID. For example, if your user account ID is 181, then your username is **builduser181@sap.com** .
 
    ![alt text](image-24.png)
 
@@ -234,7 +235,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    Log in to the [SAP Build Lobby](https://build-day-gc-wk1s5i5m.us10.build.cloud.sap/).
 
-   In the next screen, click **aobocnbd7.accounts.ondemand.com**, then fill you username **builduser###@sap.com** and password **W3lcome!###**. Please replace **###** with **your user ID** . 
+   In the next screen, click **aobocnbd7.accounts.ondemand.com**, then fill you username **builduser###@sap.com**. Please replace **###** with **your user account ID** . 
 
    Then click `Create` > `Build an Application` > `ABAP Cloud`.
 
@@ -255,7 +256,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    
    Please replace **###** with **your user ID** . 
 
-   ![alt text](image-11.png)
+  ![alt text](image-33.png)
 
 
 
@@ -269,6 +270,9 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 5. **Post successful creation open the project in Eclipse.**
 
+   ![alt text](image-34.png)
+
+<!--
    i. Allow browser to open eclipse.
 
    ![image](./assets/project-8.png)
@@ -290,6 +294,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    v. Finish with the creation
 
    ![image](./assets/project-13.png)
+   -->
 
 ### Exercise 2: Generating and Using Service Bindings
 
@@ -312,16 +317,19 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    4. Once the packages are validated press Next on the screen.
 
    5. Validate the general details and press Next again.
-
+      ![alt text](image-35.png)
    6. Review the list of repository objects that are going to be generated and press Next again.
+      ![alt text](image-36.png)
+
 
    7. Select a transport request from the list or browse for existing requests with description **SH build Package ###** which has been created yourown user account in **Excercise 0**. 
+   ![alt text](image-37.png)
 
    Please replace **###** with **your user ID** . 
 
    8. Click Finish and wait for artifacts to generate.
 
-   9. Publish the artifacts.
+   9.  Publish the artifacts.
 
    ![alt text](image-15.png)
 
@@ -346,31 +354,39 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    2. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
 
    - URL: <https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html>
-   - Dev Space Id: `ws-jb8lx`  or `ws-l62dz`
+   - Dev Space Id: `ws-lr64p`  or `ws-n2cf6`
 
-      Fr builduser180@sap.com to builduser190@sap.com, use `ws-jb8lx`
+      Fr builduser001@sap.com to builduser100@sap.com, use `ws-lr64p`
 
-      Fr builduser191@sap.com to builduser200@sap.com, use `ws-l62dz`
+      Fr builduser101@sap.com to builduser200@sap.com, use `ws-n2cf6`
+
 
 
    - Destination Name:'H01`
       ![alt text](image-25.png)
 
-   1. Click on Apply and Close.
+   3. Click on Apply and Close.
 
-   2. Select the newly published entity and select Create Fiori Project.
+   4. Select the newly published entity and select Create Fiori Project.
 
-   ![alt text](image-26.png)
+      ![alt text](image-26.png)
+      *Note: If you run into the following error*
+      ![alt text](image-38.png)
+      *Find the correct Dev Space ID as the following and maintained it as `2` *
+      *url: https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html*
+      ![alt text](image-39.png)
+      ![alt text](image-40.png)
 
-   3. Select the “List Report Page” as the template.
+
+   5. Select the “List Report Page” as the template.
 
    ![image](./assets/fiori-8.png)
 
-   4. Review the Entity Selection step and press Next.
+   6. Review the Entity Selection step and press Next.
 
       ![alt text](image-27.png)
 
-   5. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
+   7. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
 
       Module name: zshbuild_ui5_###
 
@@ -382,17 +398,17 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 
 
-   10. Click on Preview application and select start-mock. This will setup the dependencies and start a mock application.
+   8. Click on Preview application and select start-mock. This will setup the dependencies and start a mock application.
 
       ![alt text](image-29.png)
 
       ![alt text](image-30.png)
 
-   11.  In the preview app press Go to view mock data.
+   9.  In the preview app press Go to view mock data.
       ![alt text](image-31.png)
  
 
-   12. Stop the preview in SAP Business Application Studio.
+   10. Stop the preview in SAP Business Application Studio.
    ![alt text](image-32.png)  
 
 ## Key Takeaways
