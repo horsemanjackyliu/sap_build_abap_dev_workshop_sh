@@ -372,9 +372,12 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
       ![alt text](image-26.png)
       *Note: If you run into the following error*
       ![alt text](image-38.png)
-      *Find the correct Dev Space ID as the following and maintained it as `2` *
+      *Find the correct Dev Space ID as the following and maintained it as* `2` 
+
       *url: https://build-day-gc-wk1s5i5m.us10cf.applicationstudio.cloud.sap/index.html*
+
       ![alt text](image-39.png)
+
       ![alt text](image-40.png)
 
 
